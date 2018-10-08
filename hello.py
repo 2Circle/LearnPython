@@ -25,3 +25,21 @@ print(GameCompanys)
 #使用remove删除元素
 GameCompanys.remove("sony")
 print(GameCompanys)
+
+#使用range生成数字
+ManyNumbers = range(1,101)#错误的写法
+for value in range(1,101):
+    print(value)
+
+#列表解析写法
+squares = [value**2 for value in range(1,11)]
+print(squares)
+
+#列表切片
+print(GameCompanys[0:1]) 
+
+for cm in GameCompanys:
+    if cm == "nintendo":
+        print(cm.upper())
+    else:
+        print(cm.title())
